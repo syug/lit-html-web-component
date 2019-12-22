@@ -25,6 +25,12 @@ class MyButton extends HTMLElement {
       <button><slot></slot></button>
     `;
   }
+  static get observedAttributes() {
+    return ["to", "name"];
+  }
+  attributeChangedCallback(name, prevValue, nextValue) {
+    console.log(`${name}: ${prevValue} => ${nextValue}`);
+  }
 }
 
 export default MyButton;
