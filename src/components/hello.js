@@ -1,5 +1,8 @@
 import { LitElement, html, css } from "lit-element";
 
+/**
+ * Hello component
+ */
 class Hello extends LitElement {
   static get properties() {
     return { to: { type: String } };
