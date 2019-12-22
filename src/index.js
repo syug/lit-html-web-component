@@ -1,6 +1,6 @@
 import { html, render } from "lit-html";
 import "./styles.css";
-import "./components/hello";
+import Hello from "./components/hello";
 import MyButton from "./components/button";
 
 const registerCustomElement = (name, componentClass) => {
@@ -9,6 +9,7 @@ const registerCustomElement = (name, componentClass) => {
   }
 };
 registerCustomElement("my-button", MyButton);
+registerCustomElement("say-hello", Hello);
 
 // document.getElementById("app").innerHTML = `
 // <my-button>Hello My button!</my-button>

@@ -39,4 +39,5 @@ class Hello extends LitElement {
     this.to = `${this.to}!`;
   }
 }
-if (!customElements.get("say-hello")) customElements.define("say-hello", Hello);
+
+export default Hello;
